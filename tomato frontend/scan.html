@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crop Scan - कृषि Scan</title>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+
+</head>
+
+<body>
+
+<div class="scan-container">
+
+
+<!--  HEADER  -->
+
+<h1>🌱 Crop Leaf Scan</h1>
+
+<p class="scan-subtitle">
+    AI-powered crop health and disease detection
+</p>
+
+
+<!--  AI INFO  -->
+
+<div class="scan-info">
+
+    <div class="info-card">
+        🤖
+        <span>AI Model Ready</span>
+    </div>
+
+    <div class="info-card">
+        📷
+        <span>Upload Crop Leaf</span>
+    </div>
+
+    <div class="info-card">
+        ⚡
+        <span>Instant Analysis</span>
+    </div>
+
+</div>
+
+
+<!--  INSTRUCTION  -->
+
+<p class="scan-description">
+
+    Upload a clear crop leaf image for AI disease detection,
+    health analysis and treatment recommendations.
+
+</p>
+
+
+<!--  IMAGE PREVIEW  -->
+
+<div class="upload-box">
+
+    <img
+        id="previewImage"
+        src="https://via.placeholder.com/300x200?text=Crop+Leaf+Preview"
+        alt="Crop Leaf Preview"
+    >
+
+    <div class="preview-overlay">
+        📸 Preview
+    </div>
+
+</div>
+
+
+<!--  CAMERA / GALLERY  -->
+
+<div class="camera-actions">
+
+    <label for="cameraInput" class="camera-btn">
+        📷 Camera
+    </label>
+
+    <label for="galleryInput" class="gallery-btn">
+        🖼 Gallery
+    </label>
+
+</div>
+
+
+<!--  FILE INPUTS  -->
+
+<input
+    type="file"
+    id="cameraInput"
+    accept="image/*"
+    capture="environment"
+    hidden
+>
+
+<input
+    type="file"
+    id="galleryInput"
+    accept="image/*"
+    hidden
+>
+
+
+<!--  ANALYZE BUTTON  -->
+
+<button
+    type="button"
+    class="action-btn detect-btn"
+    id="analyzeBtn"
+>
+    🤖 Analyze Leaf
+</button>
+
+
+<!--  AI LOADING  -->
+
+<div
+    id="loadingBox"
+    class="loading-box"
+    style="display:none;"
+>
+
+    <div class="loading-spinner">
+        🔄
+    </div>
+
+    <h3>
+        🤖 AI is Analyzing...
+    </h3>
+
+    <p id="loadingText">
+        Preparing crop image...
+    </p>
+
+
+    <div class="loading-steps">
+
+        <div id="step1" class="loading-step">
+            <span>1</span>
+            Image Processing
+        </div>
+
+        <div id="step2" class="loading-step">
+            <span>2</span>
+            Disease Detection
+        </div>
+
+        <div id="step3" class="loading-step">
+            <span>3</span>
+            Generating Recommendation
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--  SUPPORTED CROPS  -->
+
+<div class="recent-card">
+
+    <h3>🌾 Supported Crops</h3>
+
+    <div class="crop-list">
+
+        <p>🍅 Tomato</p>
+        <p>🌾 Wheat</p>
+        <p>🌽 Maize</p>
+        <p>🌱 Rice</p>
+        <p>🥔 Potato</p>
+        <p>➕ More crops coming soon</p>
+
+    </div>
+
+</div>
+
+
+<!--  SCAN TIPS  -->
+
+<div class="recent-card">
+
+    <h3>💡 Better Scan Tips</h3>
+
+    <p>📸 Use a clear and well-lit leaf image.</p>
+    <p>🔍 Keep the complete leaf visible.</p>
+    <p>🌿 Avoid blurry or extremely dark photos.</p>
+    <p>☀️ Natural lighting gives better results.</p>
+
+</div>
+
+
+<!--  BACK BUTTON  -->
+
+<a href="dashboard.html">
+
+    <button
+        type="button"
+        class="back-btn"
+    >
+        ⬅ Back to Dashboard
+    </button>
+
+</a>
+
+
+<!--  BOTTOM NAV  -->
+
+<div class="bottom-nav">
+
+    <a href="dashboard.html">
+        🏠 Home
+    </a>
+
+    <a href="scan.html">
+        📷 Scan
+    </a>
+
+    <a href="profile.html">
+        👤 Profile
+    </a>
+
+</div>
+
+
+</div>
+
+<!--  JAVASCRIPT  -->
+
+<script src="js/scan.js"></script>
+
+</body>
+
+</html>
